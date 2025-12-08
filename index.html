@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar responsiveness</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul  class="sidebar">
+            <li onclick= closeSidebar()><a href="#"><img src="x.svg" alt="" width="35rem"></a></li>
+            <li><a href="#">LeafLine</a></li>
+            <li></li><a href="#">Home</a></li>
+            <li></li><a href="#">About</a></li>
+            <li></li><a href="#">Projects</a></li>
+            <li></li><a href="#">Contacts</a></li>
+            
+             
+            
+        </ul>
+        <ul>
+            
+            <li ><a href="#">LeafLine</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Contacts</a></li>
+            <li class="menu-button" onclick= showSidebar()><a href="#"><img src="menu (2).svg" alt="" width="30rem"></a></li>
+           
+            
+        </ul>
+    </nav>
+
+</body>
+<script>
+     function showSidebar() {
+        const sidebar = document.querySelector(`.sidebar`)
+        sidebar.style.display = `flex`
+     }
+     function closeSidebar() {
+        const sidebar = document.querySelector(`.sidebar`)
+        sidebar.style.display = `none`
+     }
+</script>
+
+</html>
